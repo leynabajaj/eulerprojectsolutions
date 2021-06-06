@@ -1,5 +1,5 @@
 # eulerprojectsolutions
-These are my own personal solutions to the first 100 problems of ProjectEuler in Python. I am doing this as I am new to the site, and I wanted a new way to challenge myself :). If you happened to stumble upon this repo and you are new to this just like me, feel free to take a look yourself.  
+These are my own personal solutions to the first 100 problems of ProjectEuler in Python. I am doing this as I am new to the site, and I wanted a new way to challenge myself :). If you happened to stumble upon this repo and you are new to this just like me, feel free to take a look yourself. My friend key is 1831640_e8yk4T2WwU9vZ3gnr1kXA8QerSOXtypr if you would like to add me.
 
 [ProjectEuler](https://projecteuler.net/) is a website full of practice problems for people who enjoy math and programming. Problems follow a one-minute rule where it should take under a minute on a modern computer your code to compile and a solution to be found. My goal is for all my algorithmns to follow this. 
 
