@@ -1,3 +1,5 @@
+import math
+
 # Problem 1: If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
 # The sum of these multiples is 23.
 # Find the sum of all the multiples of 3 or 5 below 1000.
@@ -24,3 +26,41 @@ def fibFinder(before, current, target):
         return 0 + fibFinder(current, newSum, target)
 
 print(fibFinder(1,1,4000000)) # to start from 1 and 2 the before had to have been one. Answer is 4613732.
+
+# The prime factors of 13195 are 5, 7, 13 and 29. 
+# What is the largest prime factor of the number 600851475143 ?
+
+def nextFactor(num):
+    # gives the smallest next factor for a given number. If this is the same as the num then 
+    # the number is prime
+    if num == 1:
+        return 1
+    for i in range(2,int(math.sqrt(num))+1): # Tons of ways to optimise this but generally only have to search up to sqrt(n)
+        if num % i == 0:
+            return i
+    return num
+
+def primeFactors(cur):
+    def findPrimes(cur, max):
+        next = nextFactor(cur) 
+
+        if cur == next: # the case where the current number is prime
+            if cur > max:
+                max = cur
+            return max 
+        
+        if next > cur: 
+            max = cur 
+        
+        return findPrimes(int(cur/next), max) # recursion here, divides the current by the next factor to get the new cur
+    return findPrimes(cur, 0)
+        
+
+print(primeFactors(600851475143))
+    
+    
+        
+        
+
+
+
